@@ -74,7 +74,7 @@ extensions = [
 
 autosummary_generate = True
 templates_path = [ '_templates' ]
-exclude_patterns = ['_build', '_templates']
+exclude_patterns = ['_build', '_templates','../../smrt/inputs/test_*']
 autodoc_default_flags = ['members']
 
 
@@ -135,7 +135,8 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['**test**']
+# Exclude_patterns is defined above
+#exclude_patterns = ['**test**']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
