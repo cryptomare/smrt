@@ -74,7 +74,7 @@ extensions = [
 
 autosummary_generate = True
 templates_path = [ '_templates' ]
-exclude_patterns = ['_build', '_templates','smrt/inputs/test_*']
+exclude_patterns = ['_build', '_templates','inputs/test_*']
 autodoc_default_flags = ['members']
 
 
