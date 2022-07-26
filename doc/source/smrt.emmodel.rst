@@ -20,14 +20,6 @@ smrt.emmodel.commontest module
    :undoc-members:
    :show-inheritance:
 
-smrt.emmodel.dmrt\_qca\_shortrange\-LAPTOP\-2A90AQN1 module
------------------------------------------------------------
-
-.. automodule:: smrt.emmodel.dmrt_qca_shortrange-LAPTOP-2A90AQN1
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 smrt.emmodel.dmrt\_qca\_shortrange module
 -----------------------------------------
 
@@ -40,14 +32,6 @@ smrt.emmodel.dmrt\_qcacp\_shortrange module
 -------------------------------------------
 
 .. automodule:: smrt.emmodel.dmrt_qcacp_shortrange
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-smrt.emmodel.iba\-LAPTOP\-2A90AQN1 module
------------------------------------------
-
-.. automodule:: smrt.emmodel.iba-LAPTOP-2A90AQN1
    :members:
    :undoc-members:
    :show-inheritance:
