@@ -80,9 +80,14 @@ autodoc_default_flags = ['members']
 
 # From https://stackoverflow.com/questions/39249466/how-to-exclude-pytest-test-functions-from-sphinx-autodoc
 # This is the expected signature of the handler for this event, cf doc
+import re
+
+
 def autodoc_skip_member_handler(app, what, name, obj, skip, options):
     # Basic approach; you might want a regex instead
-    return name.startswith("test_")
+    # return name.startswith("test_")
+    return bool(re.search('test',name))
+
 
 # Automatically called by sphinx at startup
 def setup(app):
