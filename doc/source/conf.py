@@ -86,10 +86,7 @@ import re
 def autodoc_skip_member_handler(app, what, name, obj, skip, options):
     # Basic approach; you might want a regex instead
     # return name.startswith("test_")
-    if what == 'module':
-        return bool(re.search('test',name))
-    else:
-        return False
+    return bool(re.search('test',name))
 
 
 # Automatically called by sphinx at startup

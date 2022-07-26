@@ -4,6 +4,14 @@ smrt.inputs package
 Submodules
 ----------
 
+smrt.inputs.altimeter\_list\-LAPTOP\-2A90AQN1 module
+----------------------------------------------------
+
+.. automodule:: smrt.inputs.altimeter_list-LAPTOP-2A90AQN1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 smrt.inputs.altimeter\_list module
 ----------------------------------
 

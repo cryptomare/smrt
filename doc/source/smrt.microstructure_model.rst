@@ -92,6 +92,38 @@ smrt.microstructure\_model.teubner\_strey module
    :undoc-members:
    :show-inheritance:
 
+smrt.microstructure\_model.unified\_autocorrelation module
+----------------------------------------------------------
+
+.. automodule:: smrt.microstructure_model.unified_autocorrelation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+smrt.microstructure\_model.unified\_scaled\_exponential module
+--------------------------------------------------------------
+
+.. automodule:: smrt.microstructure_model.unified_scaled_exponential
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+smrt.microstructure\_model.unified\_sticky\_hard\_spheres module
+----------------------------------------------------------------
+
+.. automodule:: smrt.microstructure_model.unified_sticky_hard_spheres
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+smrt.microstructure\_model.unified\_teubner\_strey module
+---------------------------------------------------------
+
+.. automodule:: smrt.microstructure_model.unified_teubner_strey
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

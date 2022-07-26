@@ -36,6 +36,14 @@ smrt.rtsolver.test\_dort module
    :undoc-members:
    :show-inheritance:
 
+smrt.rtsolver.test\_nadir\_lrm\_altimetry module
+------------------------------------------------
+
+.. automodule:: smrt.rtsolver.test_nadir_lrm_altimetry
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 smrt.rtsolver.waveform\_model module
 ------------------------------------
 

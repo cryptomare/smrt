@@ -84,6 +84,14 @@ smrt.permittivity.test\_saline\_ice module
    :undoc-members:
    :show-inheritance:
 
+smrt.permittivity.test\_snow\_mixing\_formula module
+----------------------------------------------------
+
+.. automodule:: smrt.permittivity.test_snow_mixing_formula
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 smrt.permittivity.water module
 ------------------------------
 

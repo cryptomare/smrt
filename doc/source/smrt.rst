@@ -15,6 +15,7 @@ Subpackages
    smrt.microstructure_model
    smrt.permittivity
    smrt.rtsolver
+   smrt.runner
    smrt.substrate
    smrt.utils
 
