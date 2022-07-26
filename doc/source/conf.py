@@ -70,15 +70,24 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.todo',
     'sphinx.ext.imgmath',
-    'sphinx.ext.autosummary',
-    'autoapi-extension'
+    'sphinx.ext.autosummary'
  ]
 
 autosummary_generate = True
 templates_path = ['_templates']
 exclude_patterns = ['_build', '_templates']
 autodoc_default_flags = ['members']
-autoapi_ignore = ["*/test_*.py"]
+
+# From https://stackoverflow.com/questions/39249466/how-to-exclude-pytest-test-functions-from-sphinx-autodoc
+# This is the expected signature of the handler for this event, cf doc
+def autodoc_skip_member_handler(app, what, name, obj, skip, options):
+    # Basic approach; you might want a regex instead
+    return name.startswith("test_")
+
+# Automatically called by sphinx at startup
+def setup(app):
+    # Connect the autodoc-skip-member event from apidoc to the callback
+    app.connect('autodoc-skip-member', autodoc_skip_member_handler)
 
 # Mock imports if rtd cannot import them
 autodoc_mock_imports = ["collections", "warnings", "oct2py", "itertools", "inspect", "copy", "glob", "pickle", "random", "time", "logging", "threading", "functools", "numbers"]
