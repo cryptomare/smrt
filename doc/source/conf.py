@@ -69,9 +69,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.todo',
-    'sphinx.ext.imgmath']#,
-#    'sphinx.ext.autosummary'
-# ]
+    'sphinx.ext.imgmath',
+    'sphinx.ext.autosummary'
+ ]
 
 autosummary_generate = True
 templates_path = ['_templates']
@@ -86,7 +86,10 @@ import re
 def autodoc_skip_member_handler(app, what, name, obj, skip, options):
     # Basic approach; you might want a regex instead
     # return name.startswith("test_")
-    return bool(re.search('test',name))
+    if what == 'module':
+        return bool(re.search('test',name))
+    else:
+        return False
 
 
 # Automatically called by sphinx at startup
