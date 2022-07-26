@@ -69,9 +69,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.todo',
-    'sphinx.ext.imgmath',
-    'sphinx.ext.autosummary'
- ]
+    'sphinx.ext.imgmath']#,
+#    'sphinx.ext.autosummary'
+# ]
 
 autosummary_generate = True
 templates_path = ['_templates']
