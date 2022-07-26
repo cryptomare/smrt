@@ -18,25 +18,21 @@
 #
 import os
 import sys
-\
-
-
-
 
 # sys.path.insert(0, os.path.abspath('source/'))
 sys.path.insert(0, os.path.abspath('../../smrt/'))
 
 # This allows readthedocs to find the submodules
-on_rtd = os.environ.get('READTHEDOCS') == 'True'
-if on_rtd:
-    # For DORT rtsolver:
-    import math
-    # For Autocorrelation microstructure_model:
-    import copy
-    # For utils
-    # import oct2py
-    # For everything:
-    import xarray
+# on_rtd = os.environ.get('READTHEDOCS') == 'True'
+# if on_rtd:
+#    # For DORT rtsolver:
+#    import math
+#    # For Autocorrelation microstructure_model:
+#    import copy
+#    # For utils
+#    # import oct2py
+#    # For everything:
+#    import xarray
 
 
 # sphinxcontrib-restbuilder specific code
@@ -45,10 +41,14 @@ rst_file_suffix = '.rst'
 rst_link_suffix = ''
 rst_line_width = 78
 rst_indent = 4
+
+
 def rst_file_transform(docname):
     if docname == 'index':
         docname = 'home'
     return docname.title() + rst_file_suffix
+
+
 def rst_link_transform(docname):
     if docname == 'index':
         return 'wiki'
@@ -64,6 +64,7 @@ def rst_link_transform(docname):
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
@@ -73,16 +74,16 @@ extensions = [
  ]
 
 autosummary_generate = True
-templates_path = [ '_templates' ]
-exclude_patterns = ['_build', '_templates','inputs/test_*']
+templates_path = ['_templates']
+exclude_patterns = ['_build', '_templates']
 autodoc_default_flags = ['members']
-
+autoapi_ignore = ["*/test_*.py"]
 
 # Mock imports if rtd cannot import them
-autodoc_mock_imports = ["collections", "warnings", "oct2py", "itertools", "inspect", "copy", "glob","pickle", "random", "time", "logging", "threading", "functools", "numbers"]
+autodoc_mock_imports = ["collections", "warnings", "oct2py", "itertools", "inspect", "copy", "glob", "pickle", "random", "time", "logging", "threading", "functools", "numbers"]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -136,7 +137,7 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 # Exclude_patterns is defined above
-#exclude_patterns = ['**test**']
+# exclude_patterns = ['**test**']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -175,7 +176,7 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'bizstyle'
+# html_theme = 'bizstyle'
 html_theme = 'karma_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -183,11 +184,11 @@ html_theme = 'karma_sphinx_theme'
 # documentation.
 #
 # alabaster theme options
-#html_theme_options = {
+# html_theme_options = {
 #    "fixed_sidebar": "true",
 #    "sidebar_collapse": "true",
 #    "show_powered_by": "false"
-#}
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -215,7 +216,7 @@ html_theme = 'karma_sphinx_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
