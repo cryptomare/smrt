@@ -212,4 +212,4 @@ class IEM_Fung92(Interface):
         k_iz = k0 * np.sqrt(eps_1).real * mu1
         k_sz = k0 * np.sqrt(eps_2 - (1 - mu1**2) * eps_1).real
 
-        return fresnel_transmission_matrix(eps_1, eps_2, mu1, npol) * np.exp(- (k_sz - k_iz)**2 * self.roughness_rms**2)
+        return fresnel_transmission_matrix(eps_1, eps_2, mu1, npol)
